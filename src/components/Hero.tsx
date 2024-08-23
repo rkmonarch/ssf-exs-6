@@ -1,32 +1,10 @@
 "use client";
 
-import {
-  Connection,
-  PublicKey,
-  Keypair,
-  Transaction,
-  SystemProgram,
-  LAMPORTS_PER_SOL,
-} from "@solana/web3.js";
+import { Connection, PublicKey, Keypair } from "@solana/web3.js";
 import BigNumber from "bignumber.js";
-import {
-  TOKEN_PROGRAM_ID,
-  createInitializeMintInstruction,
-  MINT_SIZE,
-  getAssociatedTokenAddressSync,
-  createAssociatedTokenAccountInstruction,
-  createMintToCheckedInstruction,
-  createTransferInstruction,
-  createBurnCheckedInstruction,
-  createApproveCheckedInstruction,
-  createRevokeInstruction,
-  createCloseAccountInstruction,
-} from "@solana/spl-token";
 import { useWallet } from "@jup-ag/wallet-adapter";
 import { useState } from "react";
-import { toast } from "react-toastify";
-import formatAddress from "@/utils/formatAddress";
-import { encodeURL, findReference, validateTransfer } from "@solana/pay";
+import { findReference, validateTransfer } from "@solana/pay";
 import products from "@/app/data/products";
 import ProductCard from "./product/card";
 
