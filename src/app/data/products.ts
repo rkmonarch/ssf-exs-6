@@ -3,7 +3,7 @@ const products = [
     id: 1,
     name: "T-shirt",
     price: 0.01,
-    image: "/images/t-shirt.png", // Replace with the actual image path
+    image: "/images/t-shirt.png",
   },
   {
     id: 2,

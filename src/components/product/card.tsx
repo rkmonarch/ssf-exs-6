@@ -20,8 +20,6 @@ import {
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-// toast.configure();
-
 interface Product {
   id: number;
   name: string;
@@ -31,7 +29,6 @@ interface Product {
 
 interface ProductCardProps {
   product: Product;
-  onBuy: (product: Product) => void;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
